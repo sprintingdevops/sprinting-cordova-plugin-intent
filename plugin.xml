@@ -11,20 +11,20 @@
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="IntentShim" >
-                <param name="android-package" value="com.darryncampbell.cordova.plugin.intent.IntentShim"/>
+                <param name="android-package" value="com.chaoticmanner.cordova.plugin.intent.IntentShim"/>
                 <param name="onload" value="true"/>
             </feature>
         </config-file>
         <config-file target="AndroidManifest.xml" platform="android" parent="/manifest/application/activity" mode="merge">
             <intent-filter>
-                <action android:name="com.darryncampbell.cordova.plugin.intent.ACTION" />
+                <action android:name="com.chaoticmanner.cordova.plugin.intent.ACTION" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </config-file>
         <config-file target="AndroidManifest.xml" platform="android" parent="/manifest" mode="merge">
             <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
         </config-file>
-        <source-file src="src/android/IntentShim.java" target-dir="src/com/darryncampbell/plugin/intent" />
+        <source-file src="src/android/IntentShim.java" target-dir="src/com/chaoticmanner/plugin/intent" />
 		<framework src="androidx.core:core:1.1.0" />
     </platform>
 	

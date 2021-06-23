@@ -1,4 +1,4 @@
-package com.darryncampbell.cordova.plugin.intent;
+package com.chaoticmanner.cordova.plugin.intent;
 
 import android.Manifest;
 import android.app.Activity;
@@ -326,7 +326,7 @@ public class IntentShim extends CordovaPlugin {
                     callbackContext.error("File not found: " + uriAsFile.toString());
                     return null;
                 }
-                String PACKAGE_NAME = this.cordova.getActivity().getPackageName() + ".darryncampbell.cordova.plugin.intent.fileprovider";
+                String PACKAGE_NAME = this.cordova.getActivity().getPackageName() + ".chaoticmanner.cordova.plugin.intent.fileprovider";
                 Uri uri = FileProvider.getUriForFile(this.cordova.getActivity().getApplicationContext(), PACKAGE_NAME, uriAsFile);
                 return uri;
             }
