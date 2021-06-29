@@ -1,5 +1,5 @@
 {
-  "name": "simple-cordova-plugin-intent",
+  "name": "sprinting-cordova-plugin-intent",
   "version": "2.0.0",
   "description": "General purpose intent shim layer for cordova appliations on Android.  Handles various techniques for sending and receiving intents.",
   "main": "intentShim.js",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:snakelizzard/cordova-plugin-intent.git"
+    "url": "git@github.com:sprintingdevops/sprinting-cordova-plugin-intent.git"
   },
   "keywords": [
     "ecosystem:cordova",
